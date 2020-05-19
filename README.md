@@ -13,11 +13,11 @@ dependencies {
 然后就可以使用如下语法结构来申请运行时权限了：
 
 ```kotlin
-            PermissionX.request(this,Manifest.permission.CALL_PHONE){allGranted,deniedList ->
-                if (allGranted){
-                    Toast.makeText(this,"all permission are granted",Toast.LENGTH_SHORT).show()
-                }else{
-                    Toast.makeText(this,"you denied $deniedList",Toast.LENGTH_SHORT).show()
-                }
-            }
+PermissionX.request(this,Manifest.permission.CALL_PHONE){allGranted,deniedList ->
+   if (allGranted){
+       Toast.makeText(this,"all permission are granted",Toast.LENGTH_SHORT).show()
+    }else{
+       Toast.makeText(this,"you denied $deniedList",Toast.LENGTH_SHORT).show()
+    }
+}
 ```
